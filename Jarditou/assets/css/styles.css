@@ -1,0 +1,119 @@
+
+/* Metre les liens dans un fond noir */
+ul {
+    background-color: black;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    color: white;
+}
+
+/* Pour enlever le soulignement des liens */
+a{
+    text-decoration: none;
+}
+
+/* Pour laisser les liens blancs lorsque ces derniers ont été visités */
+
+a:visited{
+    color: white;
+}
+
+/* Faire 2 blocs (texte et colonne de droite bleu */
+section {
+    block-size: auto;
+    }
+
+/* Création colonne de droite bleu */
+  aside { 
+    background-color:rgb(14, 149, 226);
+    grid-template-columns: auto;
+    float: inline-end;
+    height: -200px;
+    width: auto;
+}
+
+/* Faire que le bloc texte soit flexible */
+p{
+    display: flex;
+    text-align: left;
+}
+
+/* Premier bloc à 70% et deuxième bloc à 30% */
+.global{
+ align-items: 70%;
+ align-items: 30%;
+}
+
+/*  */
+.bo{
+    display: flex;
+}
+
+/* Hauteur du logo JARDITOU */
+.so{
+    height: 200px;
+    display: block;
+}
+
+/* Rendre le titre Tout le jardin flexible aligné et centré */
+.sa{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+/* Afficher la grille texte et la colonne */
+.to{
+display: grid;
+grid-template-columns: 70% 30%;
+}
+
+/* Colonne de droite bleu */
+.tu{
+    display: flex;
+    background-color: aqua;
+}
+
+.promo{
+    width : 100%;
+}
+
+/* Je commence le web responsive */
+
+/* Breakpoint : 768 pixels */
+@media screen and (max-width: 768px){
+
+/* Pour redimensionner les polices d'écriture */
+
+.firstp {
+    color:aqua;
+    font-size: 3rem;
+}
+   
+.secondp {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+.thirdp {
+    color:rgb(27, 211, 36);
+    font-size: 1rem;
+} 
+
+/* Afficher les menus verticalement sur mobile */
+
+    /*masque la colone de droite*/
+    .tu{
+        display: none;
+        background-color: rgb(209, 223, 17);
+    }
+    nav ul li {
+        display: block;
+    }
+}
+
+    
+
