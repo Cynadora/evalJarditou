@@ -6,12 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">  
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 <body>
-      
-    <script src="javascript1.js"></script>
-
     <img src="./src/img/images/jarditou_logo.jpg" alt="image jardinier" title="jardinier">
 
 
@@ -29,39 +26,63 @@
 
     <h1>Contact</h1>
     <hr>
-    <form action="http://bienvu.net/script.php" method="post">
+    <form action="#" method="post">
         <fieldset>
             <legend>Coordonnées</legend>
             <label for="nom">Nom*:</label><input type="text" name="nom" id="nom"><br>
+            <span id="textem"></span> <br>
+
             <label for="prenom">Prénom*:</label><input type="text" name="prenom" id="prenom"><br>
+            <span id="prenomm"></span> <br>
+
             <label>Sexe :</label>
-            <input type="radio" name="Sexe" value="Féminin">Féminin
-            <input type="radio" name="Sexe" value="Masculin">Masculin<br>
+            <input type="radio" name="sexe" value="Féminin"  id="feminin">Féminin 
+            <input type="radio" name="sexe" value="Masculin" id="masculin">Masculin <br> 
+            <span id="sexe_manquant"></span> <br>
             <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date"><br>
+            <span id="datem"></span> <br>
+
+
             <label for="code_postal">Code postal*:</label><input type="text" name="code_postal" id="code_postal"><br>
-            <label for="?">Adresse:</label><input type="adresse"><br>
-            <label for="?">Ville:</label><input type="ville"><br>
-            <label for="email"><label for="email">Email:</label><input type="email"><br>
+            <span id="codepostalm"></span> <br>
+
+            <label for="?">Adresse:</label><input type="adresse" id="adresse"><br>
+            <span id="adressem"></span> <br>
+    
+
+            <label for="?">Ville:</label><input type="ville" id="ville"><br>
+            <span id="villem"></span> <br>
+        
+
+            <label for="email">Email:</label><input type="email" id="email"><br>
+            <span id="emailm"></span> <br>
+
         </fieldset>
 
         <fieldset>
             <legend>Votre demande</legend>
             <label for="">Sujet*:</label>
             <select name="sujet">
+                <option>Veuillez selectionnez un sujet</option>
                 <option>Mes commandes</option>
                 <option>Question sur un produit</option>
                 <option>Réclamation</option>
                 <option>Autres</option>
-            </select> <br>
-            <label for="">Votre question*:</label>
-            <textarea name="" id="" cols="20" rows="2"></textarea>
+               
+            </select> <br><br>
+            <label for="question">Votre question*:
+             <br>
+            <textarea name="question" id="question" cols="20" rows="2"></textarea><br>
+            <span id="question_manquante"></span>
         </fieldset>
         <hr>
         <input type="checkbox" name="J'accepte le traitement informatique de ce formulaire"
-            value="J'accepte le traitement informatique de ce formulaire"> J'accepte le traitement informatique de ce
+            value="J'accepte le traitement informatique de ce formulaire" id="accepte"> J'accepte le traitement informatique de ce
         formulaire<br>
-        <button name="Envoyer" rows="1" cols="15"> Envoyer</button>
-        <button name="Annuler" rows="1" cols="15"> Annuler</button>
+        <span id="accept_manquant"></span> <br>
+
+        <button type="submit" name="Envoyer" id="envoyer"> envoyer</button>
+        <button type="reset" name="Annuler">Annuler</button>
 
     </form>
 
@@ -73,8 +94,8 @@
             <li><a href="Plan du site.html">Plan du site</a></li>
         </ul>
     </footer>
-    
-<script src="./js/script.js"></script> 
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
